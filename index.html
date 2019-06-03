@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+  	<h1 class="sto">100</h1>
+    <div>
+      <div style="background-image: url(Antilop.jpg); height: 200px; width: 300px; background-size: 100% 100%; margin-left: 300px; margin-top: 100px; position: absolute;" class="btn1">
+        
+      </div>
+      <div style="background-image: url(begemot.jpg); height: 200px; width: 300px; background-size: 100% 100%; margin-left: 650px; margin-top: 100px; position: absolute;" class="btn2">
+        
+      </div>
+      <div style="background-image: url(elephant.jpg); height: 200px; width: 300px; background-size: 100% 100%; margin-left: 1000px; margin-top: 100px; position: absolute;" class="btn3">
+        
+      </div>
+      <div style="background-image: url(giena.jpg); height: 200px; width: 300px; background-size: 100% 100%; margin-left: 1150px; margin-top: 350px; position: absolute;" class="btn4">
+        
+      </div>
+      <div style="background-image: url(jiraf.jpg); height: 200px; width: 300px; background-size: 100% 100%; margin-left: 100px; margin-top: 350px; position: absolute;" class="btn5">
+        
+      </div>
+      <div style="background-image: url(korova.jpg); height: 200px; width: 300px; background-size: 100% 100%; margin-left: 125px; margin-top: 600px; position: absolute;" class="btn6">
+        
+      </div>
+      <div style="background-image: url(lion.jpg); height: 200px; width: 300px; background-size: 100% 100%; margin-left: 450px; margin-top: 600px; position: absolute;"class="btn7">
+        
+      </div>
+      <div style="background-image: url(nosorog.jpg); height: 200px; width: 300px; background-size: 100% 100%; margin-left: 800px; margin-top: 600px; position: absolute;" class="btn8">
+        
+      </div>
+      <div style="background-image: url(zebra.jpg); height: 200px; width: 300px; background-size: 100% 100%; margin-left: 1150px; margin-top: 600px; position: absolute;" class="btn9">   
+      </div>
+
+    </div>
+    <script>
+    	let ochki = 100
+		let repeat = function() {
+		ochki = ochki - 10
+		document.querySelector(".sto").innerHTML = ochki
+	}
+
+    	document.querySelector(".btn1").onclick = repeat
+    	document.querySelector(".btn2").onclick = repeat
+    	document.querySelector(".btn3").onclick = function() {
+    		ochki = ochki + 100
+    		document.querySelector(".sto").innerHTML = ochki
+    		alert("молодец")
+    	}
+    	document.querySelector(".btn4").onclick = repeat
+    	document.querySelector(".btn5").onclick = repeat
+    	document.querySelector(".btn6").onclick = repeat
+		document.querySelector(".btn7").onclick = repeat
+		document.querySelector(".btn8").onclick = repeat
+		document.querySelector(".btn9").onclick = repeat
+
+		let proverka = function() {
+			alert("найди elephant")
+			document.querySelector(".btn1").style.background="black" 
+			document.querySelector(".btn2").style.background="black" 
+			document.querySelector(".btn3").style.background="black" 
+			document.querySelector(".btn4").style.background="black" 
+			document.querySelector(".btn5").style.background="black" 
+			document.querySelector(".btn6").style.background="black" 
+			document.querySelector(".btn7").style.background="black" 
+			document.querySelector(".btn8").style.background="black"
+			document.querySelector(".btn9").style.background="black"  
+		}
+		document.querySelector(".btn1").style.dispaly="block"
+		setTimeout(proverka, 2000);
+    </script> 
+  </body>
+</html>
